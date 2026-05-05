@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="App">
+    <!-- 学习测试页面 -->
+    <TestApp />
+    
+    <!-- 正式项目页面（暂时隐藏） -->
+    <!-- <XtxShortCut></XtxShortCut>
+    <XtxHeaderNav></XtxHeaderNav>
+    <XtxBanner></XtxBanner>
+    <XtxNewGoods></XtxNewGoods>
+    <XtxHotBrand></XtxHotBrand>
+    <XtxTopic></XtxTopic>
+    <XtxFooter></XtxFooter> -->
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import TestApp from './study/TestApp.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+// 正式项目组件（学习时暂时不用）
+// import XtxShortCut from './components/XtxShortCut.vue'
+// import XtxHeaderNav from './components/XtxHeaderNav.vue'
+// import XtxBanner from './components/XtxBanner.vue'
+// import XtxNewGoods from './components/XtxNewGoods.vue'
+// import XtxHotBrand from './components/XtxHotBrand.vue'
+// import XtxTopic from './components/XtxTopic.vue'
+// import XtxFooter from './components/XtxFooter.vue'
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
