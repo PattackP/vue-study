@@ -16,6 +16,8 @@ import RefsApp from './16-refs获取DOM标签/App.vue'
 import NextTickApp from './17-$nextTick/App.vue'
 import DirectiveApp from './18-自定义指令-全局注册-局部注册/App.vue'
 import LoadingApp from './19-v-loading指令封装/App.vue'
+import SlotApp from './20-插槽/App.vue'
+import TableCaseApp from './21-商品案例-组件封装/App.vue'
 
 export const testList = [
   {
@@ -125,5 +127,17 @@ export const testList = [
     label: 'v-loading 指令',
     component: LoadingApp,
     description: 'loading 遮罩层指令封装'
+  },
+  {
+    name: 'SlotApp',
+    label: '插槽',
+    component: SlotApp,
+    description: '默认插槽 具名插槽 作用域插槽'
+  },
+  {
+    name: 'TableCaseApp',
+    label: '商品案例',
+    component: TableCaseApp,
+    description: '表格组件封装 + 标签组件 + 作用域插槽'
   },
 ]

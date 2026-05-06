@@ -37,4 +37,11 @@ app.directive('global-bounce', {
   }
 })
 
+// v-focus 指令 - 自动聚焦
+app.directive('focus', {
+  mounted(el) {
+    el.focus()
+  }
+})
+
 app.mount('#app')
