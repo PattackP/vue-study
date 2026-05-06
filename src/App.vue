@@ -1,8 +1,11 @@
 <template>
   <div class="App">
     <!-- 学习测试页面 -->
-    <TestApp />
-    
+    <!-- <TestApp /> -->
+
+    <!-- Vue Router 示例 -->
+    <RouterExample />
+
     <!-- 正式项目页面（暂时隐藏） -->
     <!-- <XtxShortCut></XtxShortCut>
     <XtxHeaderNav></XtxHeaderNav>
@@ -15,7 +18,8 @@
 </template>
 
 <script setup>
-import TestApp from './study/TestApp.vue'
+// import TestApp from './study/TestApp.vue'
+import RouterExample from './study/22-vue-router基础使用/App.vue'
 
 // 正式项目组件（学习时暂时不用）
 // import XtxShortCut from './components/XtxShortCut.vue'

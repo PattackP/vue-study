@@ -8,11 +8,20 @@ import BaseGoodsItem from './components/BaseGoodsItem.vue'
 import BaseBrandItem from './components/BaseBrandItem.vue'
 import Button from './components/Button.vue'
 
+// 【步骤4】导入路由配置文件
+import router from './study/22-vue-router基础使用/router'
+
 const app = createApp(App)
 
+// 注册全局组件
 app.component('BaseGoodsItem', BaseGoodsItem)
 app.component('BaseBrandItem', BaseBrandItem)
 app.component('AppButton', Button)
+
+// 【步骤5】注册路由插件到 Vue 实例
+// app.use() 是 Vue 的插件注册机制
+// 注册后所有组件都能通过 this.$router 和 this.$route 访问路由功能
+app.use(router)
 
 // 全局注册指令 - 在整个应用中都可以使用
 app.directive('global-color', {

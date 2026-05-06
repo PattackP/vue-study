@@ -32,15 +32,15 @@ const emit = defineEmits(['update:modelValue'])
 const isEdit = ref(false)
 const inp = ref(null)
 
-const handleClick = () => {
+const handleClick = async () => {
   isEdit.value = true
-  nextTick(() => {
+  await nextTick(() => {
     inp.value.focus()
   })
 }
 
 const handleEnter = (e) => {
-  if (e.target.value.trim() === '') {
+  if (!e.target.value) {
     alert('标签内容不能为空')
     return
   }
