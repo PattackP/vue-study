@@ -1,6 +1,6 @@
 import BaseCount02 from './02-工程化状态下的data是一个函数/BaseCount.vue'
 import Father03 from './03-父组件向子组件传值/Father.vue'
-import Father04 from './04-子组件向父组件传值/Father.vue'
+import Father04 from './04-子组件向子组件传值/Father.vue'
 import PropsApp from './05-props传值/App.vue'
 import ProgressApp from './06-props设置类型/App.vue'
 import ValidatorApp from './07-props类型检查/App.vue'
@@ -18,6 +18,9 @@ import DirectiveApp from './18-自定义指令-全局注册-局部注册/App.vue
 import LoadingApp from './19-v-loading指令封装/App.vue'
 import SlotApp from './20-插槽/App.vue'
 import TableCaseApp from './21-商品案例-组件封装/App.vue'
+import QueryParamsApp from './23-导航链接传参1-查询参数传参/App.vue'
+import DynamicRouteApp from './24-导航链接传参2-动态路由传参/App.vue'
+import RedirectApp from './25-路由重定向/App.vue'
 
 export const testList = [
   {
@@ -139,5 +142,23 @@ export const testList = [
     label: '商品案例',
     component: TableCaseApp,
     description: '表格组件封装 + 标签组件 + 作用域插槽'
+  },
+  {
+    name: 'QueryParamsApp',
+    label: '查询参数传参',
+    component: QueryParamsApp,
+    description: '导航链接传参 - 查询参数 ?key=xxx'
+  },
+  {
+    name: 'DynamicRouteApp',
+    label: '动态路由传参',
+    component: DynamicRouteApp,
+    description: '导航链接传参 - 动态路由 /search/:words'
+  },
+  {
+    name: 'RedirectApp',
+    label: '路由重定向',
+    component: RedirectApp,
+    description: '路由重定向 redirect 和可选参数'
   },
 ]

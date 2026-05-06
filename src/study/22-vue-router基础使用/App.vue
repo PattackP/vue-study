@@ -38,6 +38,8 @@
 </script>
 
 <style scoped>
+
+
 #app {
   font-family: Arial, sans-serif;
   max-width: 800px;
@@ -76,7 +78,7 @@ h1 {
 
 /* 路由激活状态样式 - 当前路由匹配时自动添加 */
 .navigation a.router-link-active {
-  background-color: #2ecc71;
+  background-color: #f1c40f;
   color: white;
 }
 </style>

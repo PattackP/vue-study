@@ -4,31 +4,19 @@
     <!-- <TestApp /> -->
 
     <!-- Vue Router 示例 -->
-    <RouterExample />
-
-    <!-- 正式项目页面（暂时隐藏） -->
-    <!-- <XtxShortCut></XtxShortCut>
-    <XtxHeaderNav></XtxHeaderNav>
-    <XtxBanner></XtxBanner>
-    <XtxNewGoods></XtxNewGoods>
-    <XtxHotBrand></XtxHotBrand>
-    <XtxTopic></XtxTopic>
-    <XtxFooter></XtxFooter> -->
+    <!-- <RouterExample /> -->
+    <!-- <QueryExample /> -->
+    <!-- <DynamicExample /> -->
+    <RedirectExample />
   </div>
 </template>
 
 <script setup>
 // import TestApp from './study/TestApp.vue'
-import RouterExample from './study/22-vue-router基础使用/App.vue'
-
-// 正式项目组件（学习时暂时不用）
-// import XtxShortCut from './components/XtxShortCut.vue'
-// import XtxHeaderNav from './components/XtxHeaderNav.vue'
-// import XtxBanner from './components/XtxBanner.vue'
-// import XtxNewGoods from './components/XtxNewGoods.vue'
-// import XtxHotBrand from './components/XtxHotBrand.vue'
-// import XtxTopic from './components/XtxTopic.vue'
-// import XtxFooter from './components/XtxFooter.vue'
+// import RouterExample from './study/22-vue-router基础使用/App.vue'
+// import QueryExample from './study/23-导航链接传参1-查询参数传参/App.vue'
+// import DynamicExample from './study/24-导航链接传参2-动态路由传参/App.vue'
+import RedirectExample from './study/25-路由重定向/App.vue'
 </script>
 
 <style>
